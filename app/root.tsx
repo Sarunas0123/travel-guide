@@ -10,6 +10,7 @@ import {
 import type { Route } from "./+types/root";
 import stylesheet from "./app.css?url";
 import { QueryClient, QueryClientProvider} from "@tanstack/react-query";
+import NavBar from "./components/navbar";
 
 
 export const links: Route.LinksFunction = () => [
@@ -49,6 +50,7 @@ const client = new QueryClient();
 export default function App() {
   return <>
     <QueryClientProvider client={client}>
+      <NavBar/>
       <Outlet />
     </QueryClientProvider>
     

@@ -1,6 +1,4 @@
 import type { Route } from "./+types/home";
-import Post from "./post"
-
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "Flight planner" },
@@ -9,5 +7,5 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <><Post/></>;
+  return <>Home page</>;
 }
